@@ -1,0 +1,3 @@
+.env文件中，需配置：
+1. LANGCHAIN_TRACING_V2="true"
+2. LANGCHAIN_API_KEY=""
