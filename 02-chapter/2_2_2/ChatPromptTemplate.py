@@ -10,4 +10,3 @@ chat_prompt = ChatPromptTemplate.from_messages([
 
 if __name__ == "__main__":
     print(chat_prompt.format_messages(input_language="汉语", output_language="英语", text="我爱编程"))
-
