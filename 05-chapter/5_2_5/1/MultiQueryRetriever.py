@@ -12,6 +12,7 @@ os.environ["USER_AGENT"] = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Appl
 load_dotenv()
 
 loader = WebBaseLoader("https://www.ituring.com.cn/book/3457")
+loader.requests_kwargs = {'verify': False}  # 忽略SSL验证错误
 data = loader.load()
 
 text_splitter = RecursiveCharacterTextSplitter(
